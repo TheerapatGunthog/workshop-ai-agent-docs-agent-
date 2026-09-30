@@ -1,0 +1,24 @@
+{
+  "name": "docs-agent-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "predev": "node scripts/require-docker.mjs && node scripts/copy-pdf-worker.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/require-docker.mjs && node scripts/copy-pdf-worker.mjs",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.33",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-pdf": "9.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.10",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "typescript": "5.7.2"
+  }
+}
